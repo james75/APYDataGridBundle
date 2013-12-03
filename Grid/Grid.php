@@ -14,6 +14,8 @@
 namespace APY\DataGridBundle\Grid;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 use APY\DataGridBundle\Grid\Columns;
 use APY\DataGridBundle\Grid\Rows;

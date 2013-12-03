@@ -93,7 +93,7 @@ class Entity extends Source
 
     public function initialise($container)
     {
-        $this->manager = $container->get('doctrine')->getEntityManager($this->managerName);
+        $this->manager = $container->get('doctrine')->getManager($this->managerName);
         $this->ormMetadata = $this->manager->getClassMetadata($this->entityName);
 
         $this->class = $this->ormMetadata->getReflectionClass()->name;
